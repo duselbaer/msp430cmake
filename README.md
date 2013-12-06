@@ -4,6 +4,7 @@ CMake Files to use MSP430 and CMake
    * add this repository as a submodule (let's say as /cmake/)
    * create your top-level CMakeLists.txt file which might look like this (note that the example is a specific one but it shows how simple it is to use CMake here)
 
+<pre>
 <code>
 project(NRF24NetworkingModule)
 cmake_minimum_required(VERSION 2.8)
@@ -30,6 +31,7 @@ target_link_libraries(
     msp430lib
 )
 </code>
+</pre>
 
    * go to your build-directory
    * cmake .. -DCMAKE_TOOLCHAIN_FILE=../cmake/msp430.cmake
